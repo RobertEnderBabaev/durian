@@ -6,3 +6,4 @@ env:
 deploy:
     provider: script
     script: reshift-scan -t $SCAN_TOKEN -e $UPLOAD_URL -b $TRAVIS_BRANCH
+#Test
