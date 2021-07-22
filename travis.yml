@@ -1,8 +1,3 @@
-env:
-  global:
-    - secure: "bfVxbSTo+NtU5S0mEefs34w9MXeK/ZfrukZfkamgtGy0E/mNgSdKqkvn2vDyd7lZ0d74mWFwYeB+HVQXcg2K2r8ySzAsOO6/6sMsvcQEl7HZoPLKi3OBP4RaKcRZChyiaLQBelTjXskbWcJdocDtDlvv6KldukzCRnhTvnSDhwg7bCdLhE1CG7vy2PN8vJxj52jNmiQ27p1+hyLQ45l47GIxqJEvlO2ltcb0oUzRrwKBzdAJCobvylmwkj3eQSNg64kQq2yhlygadcGCqv5mqAJ3Ef0fAsx3f+lmeqqlEhNVkqEN9+nZmTlGcicnCHhRrKDPcKO8DxqrpaSf8bM0teYVu/ftSu07AW2dlQgzFh1my/E36lNc1fVU7rA2p5uvVrYGigP6INciNOletl3/KSiJ9ar9q6XsSxUipM81cQtIzUrPYn8vtS14LPAJOIqc2GANIRr6Rs0RUlkgKToU/EfRG9Hg1vre3I1qWhH6tDcM5+ae1JTEleeVMNIIOum7KhrLcbHwsgohkjFAehIMbTLXE1+QWXgMqJB85Nuyxven/F1dcB8FcdoP85r3owE51QH6mtePNacmZbLKUBBX2eCdNlfsv1Q6uSsRqu70dZNV5s7sCq1qZZVvk9AKDZuJKOl4jPFgWz/g2kr9Ie3+smGWAW/xxX2j9g+fYGemGm0="   
-    - UPLOAD_URL="https://30268987b8a6.ngrok.io"
-    
 deploy:
   provider: script
   before_script:
