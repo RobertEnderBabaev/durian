@@ -1,5 +1,6 @@
 language: node_js
-
+node_js:
+  - 14
 before_install:
   - npm install -g @reshiftsecurity/reshift-plugin-npm
   - reshift-scan -t $SCAN_TOKEN -e $UPLOAD_URL -b $TRAVIS_BRANCH
