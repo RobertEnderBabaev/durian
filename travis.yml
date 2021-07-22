@@ -1,0 +1,8 @@
+env:
+    global:
+        - secure: "VbY9IE7XI0us78rcIdlHXVJ3MBO5N3kqphWH6fFF6BLk4oPku3PLvAbQD0ak12/ODGCZntFf99Rb6b848kIfQd5Bimgz5PYPGfDogvykt1+SwnMHLIgKa1IXhFdOie1zzpJq0Ziqnw7I2O13+KNvxHsIRyzFBDRq9n3R0V7EdB44TNprJ3eypp+Mhij2JVXEUoi2ybkGq6HBR0DgomcMaigQQc7XfyIRzvEmzGEyB5me1XyK8Vk+Rl92fHhdsoaMYPLXIrWN2nxSCbc5VSHOSlEq23VyCg5gBaaPK6/yBqRhPtJciaG5hPioAVa3PywT4XEGJLmU1dTKq6j0Vh4mfiXet741+yg7zyWmbDNGnSs4GxQPXsRBv7qP3+oWtMsIJ1MWgS+C1qKLeCV+bw73jkFG6re+Id+mE2qjkasVl8cB66HkeTkP0zy7KABeawgJBwH+gFEcYW1iz+dHM7QNMH2UPA0AGAI43kTskhHVBc8QTHUUsICPakEDBALTXBwd0Zw5xgXRCdMs461CLrBOydJUdsMOUYd3XSPDxhys1fFfxPlO+HvsSrvaY/5YzluponLc5BIePRJMp+K/22JybiiDVKDMH7rIsWXFIDnlLqu5q+9rtiqTdOcPSfumRnomyJI5GNiqUrZm+3m1L901Nf7HIsxNljXSNCOxpEthR6M="    
+        - UPLOAD_URL="https://30268987b8a6.ngrok.io"
+    
+deploy:
+    provider: script
+    script: reshift-scan -t $SCAN_TOKEN -e $UPLOAD_URL -b $TRAVIS_BRANCH
