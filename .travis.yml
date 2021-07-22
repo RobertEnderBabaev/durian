@@ -3,6 +3,6 @@ node_js:
   - 14
 before_install:
   - npm install -g @reshiftsecurity/reshift-plugin-npm
-  - reshift-scan -t $SCAN_TOKEN -e $UPLOAD_URL -b $TRAVIS_BRANCH
+  - reshift-scan -t $SCAN_TOKEN -e $UPLOAD_URL -b $TRAVIS_PULL_REQUEST_BRANCH -c $TRAVIS_PULL_REQUEST_SHA
 install:
   - echo "Reshift Security Scan Complete"
