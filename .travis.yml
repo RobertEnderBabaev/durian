@@ -1,8 +1,5 @@
 language: node_js
 
-deploy:
-  provider: script
-  before_script:
-    - npm install -g @reshiftsecurity/reshift-plugin-npm
-  script: reshift-scan -t $SCAN_TOKEN -e $UPLOAD_URL -b $TRAVIS_BRANCH
-#Test
+before_install:
+  - npm install -g @reshiftsecurity/reshift-plugin-npm
+  - reshift-scan -t $SCAN_TOKEN -e $UPLOAD_URL -b $TRAVIS_BRANCH
